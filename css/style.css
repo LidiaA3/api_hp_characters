@@ -19,11 +19,13 @@ body {
     font-family: 'Times New Roman', Times, serif;
     color: var(--color-light);
     font-size: 2rem;
+    text-align: center;
 }
 
 h1 {
     text-transform: uppercase;
     font-size: 3rem;
+    text-align: center;
 }
 
 .intro {
@@ -87,4 +89,16 @@ h1 {
 
 .slytherin {
     background-color: var(--color-house-green);
+}
+
+@media all and (max-width: 935px) {
+    .card-section {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media all and (max-width: 510px) {
+    .card-section {
+        grid-template-columns: 1fr;
+    }
 }
