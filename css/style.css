@@ -1,0 +1,90 @@
+:root {
+    --color-dark:  hsl(60, 0%, 5%);
+    --color-light: hsl(60, 10%, 90%);
+    --color-medium: hsl(60, 10%, 40%);
+
+    --color-house-red: hsl(0, 50%, 20%);
+    --color-house-yellow: hsl(57, 70%, 20%);
+    --color-house-blue: hsl(240, 50%, 20%);
+    --color-house-green: hsl(105, 50%, 20%);
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    background-color: var(--color-dark);
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--color-light);
+    font-size: 2rem;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.intro img {
+    width: 20%;
+}
+
+.intro__input {
+    width: 40%;
+    text-align: center;
+    background-color: transparent;
+    color: var(--color-light);
+    border: 2px solid var(--color-light);
+    border-radius: .5rem;
+    padding: .5rem 2rem;
+}
+
+.card-section {
+    height: 30rem;
+    margin: 2rem 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.card-section img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+.card {
+    border-radius: 1rem;
+    background-color: var(--color-medium);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.gryffindor {
+    background-color: var(--color-house-red);;
+}
+
+.hufflepuff {
+    background-color: var(--color-house-yellow);
+}
+
+.ravenclaw {
+    background-color: var(--color-house-blue);
+}
+
+.slytherin {
+    background-color: var(--color-house-green);
+}
